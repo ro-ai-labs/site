@@ -19,7 +19,7 @@
   --white: #ffffff;
   --gray-100: #f1f5f9;
   --gray-300: #cbd5e1;
-  --gray-400: #94a3b8;
+  --gray-400: #b0bec9;
   --gray-500: #64748b;
   --max-w: 900px;
   --nav-h: 72px;
@@ -130,22 +130,38 @@ img {
 }
 
 .lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   background: rgba(59, 130, 246, 0.12);
   border: 1px solid rgba(59, 130, 246, 0.25);
-  color: var(--blue);
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s;
   letter-spacing: 0.04em;
+  user-select: none;
 }
 
 .lang-toggle:hover {
   background: rgba(59, 130, 246, 0.22);
+}
+
+.lang-option {
+  color: var(--gray-500);
+  transition: color 0.2s;
+}
+
+.lang-option.lang-active {
   color: var(--white);
+}
+
+.lang-divider {
+  color: rgba(59, 130, 246, 0.3);
+  font-weight: 400;
 }
 
 .nav-hamburger {
@@ -424,6 +440,11 @@ img {
   border: 1px solid rgba(59, 130, 246, 0.1);
   border-radius: 12px;
   overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.case-card:hover {
+  border-color: rgba(59, 130, 246, 0.25);
 }
 
 .case-header {
@@ -934,24 +955,29 @@ img {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.4fr 0.6fr;
   gap: 48px;
   align-items: start;
 }
 
-.contact-cta p {
+.contact-cta > p:first-child {
   color: var(--gray-400);
   font-size: 1.05rem;
   line-height: 1.7;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .cta-urgency {
-  margin-top: 16px;
+  margin-bottom: 24px;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--teal);
-  opacity: 0.9;
+}
+
+.calendly-inline-widget {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 130, 246, 0.1);
 }
 
 .contact-info {
@@ -993,9 +1019,30 @@ img {
 .footer-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   color: var(--gray-500);
   font-size: 0.85rem;
+  gap: 24px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  color: var(--gray-500);
+  transition: color 0.2s;
+}
+
+.footer-right a:hover {
+  color: var(--gray-300);
 }
 
 /* ===========================
@@ -1079,7 +1126,11 @@ img {
 
   .footer-inner {
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-right {
     text-align: center;
   }
 

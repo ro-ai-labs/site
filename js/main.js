@@ -7,22 +7,41 @@
 
   // ---- Language Toggle ----
   var currentLang = 'ro';
-  var langBtn = document.getElementById('langToggle');
+  var langToggle = document.getElementById('langToggle');
+  var langOptions = langToggle.querySelectorAll('.lang-option');
 
   function setLanguage(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
-    langBtn.textContent = lang === 'ro' ? 'EN' : 'RO';
 
+    // Update toggle active state
+    for (var k = 0; k < langOptions.length; k++) {
+      if (langOptions[k].getAttribute('data-lang') === lang) {
+        langOptions[k].classList.add('lang-active');
+      } else {
+        langOptions[k].classList.remove('lang-active');
+      }
+    }
+
+    // Update all bilingual elements
     var elements = document.querySelectorAll('[data-ro][data-en]');
     for (var i = 0; i < elements.length; i++) {
       var el = elements[i];
+      // Skip lang toggle options themselves
+      if (el.classList.contains('lang-option')) continue;
       el.textContent = el.getAttribute('data-' + lang);
     }
   }
 
-  langBtn.addEventListener('click', function () {
+  langToggle.addEventListener('click', function () {
     setLanguage(currentLang === 'ro' ? 'en' : 'ro');
+  });
+
+  langToggle.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setLanguage(currentLang === 'ro' ? 'en' : 'ro');
+    }
   });
 
   // ---- Mobile Menu ----
