@@ -604,6 +604,36 @@ img {
   flex-shrink: 0;
 }
 
+.guarantee {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 28px;
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-radius: 12px;
+  margin-bottom: 48px;
+}
+
+.guarantee svg {
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.guarantee h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.guarantee p {
+  font-size: 0.95rem;
+  color: var(--gray-300);
+  line-height: 1.6;
+}
+
 /* ===========================
    Offer Section
    =========================== */
@@ -924,29 +954,82 @@ img {
 }
 
 /* ===========================
-   Architecture Diagram
+   Investment Timeline
    =========================== */
 
-.arch-diagram {
-  background: rgba(10, 22, 40, 0.5);
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.timeline-item {
+  padding: 28px;
+  background: rgba(59, 130, 246, 0.04);
   border: 1px solid rgba(59, 130, 246, 0.1);
   border-radius: 12px;
-  padding: 24px;
-  overflow-x: auto;
-  margin-bottom: 24px;
 }
 
-.arch-svg {
-  width: 100%;
-  height: auto;
-  min-width: 600px;
+.timeline-item-highlight {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.25);
 }
 
-.arch-caption {
-  font-size: 0.95rem;
+.timeline-week {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  background: rgba(14, 165, 233, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.timeline-item h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.timeline-item > p {
   color: var(--gray-400);
+  font-size: 0.92rem;
   line-height: 1.6;
-  text-align: center;
+  margin-bottom: 16px;
+}
+
+.timeline-cost {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.timeline-deliverables {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-deliverables li {
+  font-size: 0.92rem;
+  color: var(--gray-300);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.timeline-deliverables li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
 }
 
 /* ===========================
@@ -1140,6 +1223,11 @@ img {
   }
 
   .diff-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .timeline-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
