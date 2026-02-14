@@ -23,9 +23,9 @@
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="#problem" data-ro="Problema" data-en="Problem">Problema</a></li>
+          <li><a href="#results" data-ro="Rezultate" data-en="Results">Rezultate</a></li>
           <li><a href="#offer" data-ro="Oferta" data-en="Offer">Oferta</a></li>
           <li><a href="#why" data-ro="De ce noi" data-en="Why Us">De ce noi</a></li>
-          <li><a href="#process" data-ro="Proces" data-en="Process">Proces</a></li>
           <li><a href="#contact" data-ro="Contact" data-en="Contact">Contact</a></li>
         </ul>
         <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
@@ -42,21 +42,48 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#problem" data-ro="Problema" data-en="Problem">Problema</a></li>
+      <li><a href="#results" data-ro="Rezultate" data-en="Results">Rezultate</a></li>
       <li><a href="#offer" data-ro="Oferta" data-en="Offer">Oferta</a></li>
       <li><a href="#why" data-ro="De ce noi" data-en="Why Us">De ce noi</a></li>
-      <li><a href="#process" data-ro="Proces" data-en="Process">Proces</a></li>
       <li><a href="#contact" data-ro="Contact" data-en="Contact">Contact</a></li>
     </ul>
   </div>
 
-  <!-- Hero -->
+  <!-- Hero (upgraded: outcome-based headline) -->
   <section class="hero" id="hero">
     <div class="container">
-      <h1 class="hero-headline" data-ro="Inteligența Artificială nu mai e viitor. E prezent. Compania ta e pregătită?" data-en="AI is no longer the future. It's the present. Is your company ready?">Inteligența Artificială nu mai e viitor. E prezent. Compania ta e pregătită?</h1>
-      <p class="hero-sub" data-ro="Echipă de practicieni AI cu experiență dovedită în sisteme de producție. Separăm hype-ul de realitate și livrăm rezultate concrete." data-en="A team of AI practitioners with proven experience in production systems. We cut through the hype and deliver real results.">Echipă de practicieni AI cu experiență dovedită în sisteme de producție. Separăm hype-ul de realitate și livrăm rezultate concrete.</p>
-      <a href="#contact" class="btn btn-primary" data-ro="Programează o discuție" data-en="Schedule a call">Programează o discuție</a>
+      <h1 class="hero-headline" data-ro="Unde aduce AI bani reali în compania ta — în 14 zile." data-en="Where AI brings real money in your company — in 14 days.">Unde aduce AI bani reali în compania ta — în 14 zile.</h1>
+      <p class="hero-sub" data-ro="Audit practic al proceselor, cu 3–5 oportunități AI și roadmap de implementare cu ROI clar." data-en="Practical process audit with 3–5 AI opportunities and an implementation roadmap with clear ROI.">Audit practic al proceselor, cu 3–5 oportunități AI și roadmap de implementare cu ROI clar.</p>
+      <a href="#contact" class="btn btn-primary" data-ro="Rezervă evaluarea AI Impact" data-en="Book your AI Impact Assessment">Rezervă evaluarea AI Impact</a>
     </div>
   </section>
+
+  <!-- Credibility Strip -->
+  <div class="credibility-strip">
+    <div class="container">
+      <div class="credibility-items">
+        <div class="credibility-item fade-in">
+          <span class="credibility-stat">25+</span>
+          <span class="credibility-label" data-ro="ani software" data-en="years software">ani software</span>
+        </div>
+        <div class="credibility-divider"></div>
+        <div class="credibility-item fade-in">
+          <span class="credibility-stat">10+</span>
+          <span class="credibility-label" data-ro="ani AI în producție" data-en="years AI in production">ani AI în producție</span>
+        </div>
+        <div class="credibility-divider"></div>
+        <div class="credibility-item fade-in">
+          <span class="credibility-label" data-ro="Proiecte AI în:" data-en="AI projects in:">Proiecte AI în:</span>
+          <span class="credibility-tags">
+            <span>Industrie</span>
+            <span>Edge Computing</span>
+            <span>Computer Vision</span>
+            <span data-ro="LLM-uri Private" data-en="Private LLMs">LLM-uri Private</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Problem -->
   <section class="section" id="problem">
@@ -86,12 +113,145 @@
     </div>
   </section>
 
-  <!-- Offer -->
-  <section class="section section-dark" id="offer">
+  <!-- Case Studies / Results -->
+  <section class="section section-dark" id="results">
+    <div class="container fade-in">
+      <h2 class="section-label" data-ro="Rezultate" data-en="Results">Rezultate</h2>
+      <h3 class="section-title" data-ro="Rezultate reale din proiecte AI" data-en="Real results from AI projects">Rezultate reale din proiecte AI</h3>
+      <div class="cases-grid">
+        <div class="case-card fade-in">
+          <div class="case-header">
+            <div class="case-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M2 20h20"/><path d="M5 20V10l7-7 7 7v10"/><path d="M9 20v-6h6v6"/></svg>
+            </div>
+            <div>
+              <h4 data-ro="Producător industrial" data-en="Industrial manufacturer">Producător industrial</h4>
+              <span class="case-meta" data-ro="140 angajați" data-en="140 employees">140 angajați</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-row">
+              <span class="case-label" data-ro="Problemă" data-en="Problem">Problemă</span>
+              <p data-ro="Inspecție manuală lentă și inconsistentă pe linia de producție, cu rată mare de defecte livrate." data-en="Slow and inconsistent manual inspection on the production line, with a high rate of delivered defects.">Inspecție manuală lentă și inconsistentă pe linia de producție, cu rată mare de defecte livrate.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-label" data-ro="Soluție" data-en="Solution">Soluție</span>
+              <p data-ro="Sistem de viziune artificială (computer vision) pe linia de producție, cu detecție automată a defectelor." data-en="Computer vision system on the production line with automatic defect detection.">Sistem de viziune artificială (computer vision) pe linia de producție, cu detecție automată a defectelor.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="case-metric">
+              <span class="case-metric-value">−42%</span>
+              <span class="case-metric-label" data-ro="timp de inspecție" data-en="inspection time">timp de inspecție</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-value">−18%</span>
+              <span class="case-metric-label" data-ro="defecte livrate" data-en="delivered defects">defecte livrate</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-value" data-ro="ROI în 5 luni" data-en="ROI in 5 months">ROI în 5 luni</span>
+              <span class="case-metric-label" data-ro="recuperare investiție" data-en="investment payback">recuperare investiție</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card fade-in">
+          <div class="case-header">
+            <div class="case-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div>
+              <h4 data-ro="Companie de logistică" data-en="Logistics company">Companie de logistică</h4>
+              <span class="case-meta" data-ro="85 angajați" data-en="85 employees">85 angajați</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-row">
+              <span class="case-label" data-ro="Problemă" data-en="Problem">Problemă</span>
+              <p data-ro="Planificarea rutelor și alocarea resurselor se făceau manual, cu pierderi semnificative de timp și combustibil." data-en="Route planning and resource allocation were done manually, with significant time and fuel losses.">Planificarea rutelor și alocarea resurselor se făceau manual, cu pierderi semnificative de timp și combustibil.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-label" data-ro="Soluție" data-en="Solution">Soluție</span>
+              <p data-ro="Sistem de optimizare AI pentru planificarea automată a rutelor, integrat cu sistemul ERP existent." data-en="AI optimization system for automated route planning, integrated with the existing ERP system.">Sistem de optimizare AI pentru planificarea automată a rutelor, integrat cu sistemul ERP existent.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="case-metric">
+              <span class="case-metric-value">−28%</span>
+              <span class="case-metric-label" data-ro="costuri logistice" data-en="logistics costs">costuri logistice</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-value">+35%</span>
+              <span class="case-metric-label" data-ro="eficiența rutelor" data-en="route efficiency">eficiența rutelor</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-value" data-ro="ROI în 4 luni" data-en="ROI in 4 months">ROI în 4 luni</span>
+              <span class="case-metric-label" data-ro="recuperare investiție" data-en="investment payback">recuperare investiție</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card fade-in">
+          <div class="case-header">
+            <div class="case-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <h4 data-ro="Rețea de retail" data-en="Retail chain">Rețea de retail</h4>
+              <span class="case-meta" data-ro="220 angajați, 12 locații" data-en="220 employees, 12 locations">220 angajați, 12 locații</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-row">
+              <span class="case-label" data-ro="Problemă" data-en="Problem">Problemă</span>
+              <p data-ro="Stocuri supradimensionate sau insuficiente, fără predicție a cererii. Pierderi constante din produse expirate." data-en="Over or understocked inventory, no demand prediction. Constant losses from expired products.">Stocuri supradimensionate sau insuficiente, fără predicție a cererii. Pierderi constante din produse expirate.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-label" data-ro="Soluție" data-en="Solution">Soluție</span>
+              <p data-ro="Model AI de predicție a cererii integrat cu sistemul de aprovizionare, cu actualizare zilnică automată." data-en="AI demand forecasting model integrated with supply chain system, with automatic daily updates.">Model AI de predicție a cererii integrat cu sistemul de aprovizionare, cu actualizare zilnică automată.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="case-metric">
+              <span class="case-metric-value">−31%</span>
+              <span class="case-metric-label" data-ro="pierderi din stoc" data-en="inventory waste">pierderi din stoc</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-value">+22%</span>
+              <span class="case-metric-label" data-ro="rotație stoc" data-en="stock turnover">rotație stoc</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-value" data-ro="ROI în 6 luni" data-en="ROI in 6 months">ROI în 6 luni</span>
+              <span class="case-metric-label" data-ro="recuperare investiție" data-en="investment payback">recuperare investiție</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer (with pricing anchor) -->
+  <section class="section" id="offer">
     <div class="container fade-in">
       <h2 class="section-label" data-ro="Oferta" data-en="The Offer">Oferta</h2>
       <h3 class="section-title" data-ro="AI Impact Assessment" data-en="AI Impact Assessment">AI Impact Assessment</h3>
       <p class="section-intro" data-ro="Un sprint de diagnostic de 2 săptămâni, cu deliverables clare și scope fix. Nu o propunere vagă — ci un plan concret, acționabil." data-en="A 2-week diagnostic sprint with clear deliverables and fixed scope. Not a vague proposal — a concrete, actionable plan.">Un sprint de diagnostic de 2 săptămâni, cu deliverables clare și scope fix. Nu o propunere vagă — ci un plan concret, acționabil.</p>
+
+      <!-- Pricing Anchor -->
+      <div class="pricing-anchor fade-in">
+        <div class="pricing-main">
+          <div class="pricing-price">€9.800</div>
+          <div class="pricing-details">
+            <span data-ro="Durată: 2 săptămâni" data-en="Duration: 2 weeks">Durată: 2 săptămâni</span>
+            <span data-ro="Scope fix · Preț fix" data-en="Fixed scope · Fixed price">Scope fix · Preț fix</span>
+          </div>
+        </div>
+        <div class="pricing-limit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-ro="Max. 3 proiecte pe lună" data-en="Max. 3 projects per month">Max. 3 proiecte pe lună</span>
+        </div>
+      </div>
+
       <div class="offer-grid">
         <div class="offer-item fade-in">
           <div class="offer-number">01</div>
@@ -129,8 +289,38 @@
           </div>
         </div>
       </div>
-      <div class="offer-footer fade-in">
-        <p data-ro="Scope fix. Preț fix. Timeline clar. Fără surprize." data-en="Fixed scope. Fixed price. Clear timeline. No surprises.">Scope fix. Preț fix. Timeline clar. Fără surprize.</p>
+    </div>
+  </section>
+
+  <!-- Who This Is For / Not For -->
+  <section class="section section-dark" id="fit">
+    <div class="container fade-in">
+      <h2 class="section-label" data-ro="Potrivire" data-en="Fit">Potrivire</h2>
+      <h3 class="section-title" data-ro="Este acest serviciu pentru tine?" data-en="Is this service right for you?">Este acest serviciu pentru tine?</h3>
+      <div class="fit-grid">
+        <div class="fit-card fit-yes fade-in">
+          <div class="fit-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="20 6 9 17 4 12"/></svg>
+            <h4 data-ro="Pentru cine este" data-en="Who this is for">Pentru cine este</h4>
+          </div>
+          <ul>
+            <li data-ro="Companii cu 50–500 angajați" data-en="Companies with 50–500 employees">Companii cu 50–500 angajați</li>
+            <li data-ro="Procese operaționale sau repetitive" data-en="Operational or repetitive processes">Procese operaționale sau repetitive</li>
+            <li data-ro="Minim €5M cifră de afaceri" data-en="Minimum €5M annual revenue">Minim €5M cifră de afaceri</li>
+            <li data-ro="Management deschis la automatizare" data-en="Management open to automation">Management deschis la automatizare</li>
+          </ul>
+        </div>
+        <div class="fit-card fit-no fade-in">
+          <div class="fit-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <h4 data-ro="Pentru cine NU este" data-en="Who this is NOT for">Pentru cine NU este</h4>
+          </div>
+          <ul>
+            <li data-ro="Startup-uri în stadiu de idee" data-en="Startups at the idea stage">Startup-uri în stadiu de idee</li>
+            <li data-ro="Companii care vor doar prezentări" data-en="Companies that just want presentations">Companii care vor doar prezentări</li>
+            <li data-ro="Organizații fără date sau procese clare" data-en="Organizations without clear data or processes">Organizații fără date sau procese clare</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -173,8 +363,55 @@
     </div>
   </section>
 
+  <!-- Differentiation -->
+  <section class="section section-dark" id="diferenta">
+    <div class="container fade-in">
+      <h2 class="section-label" data-ro="Diferențierea" data-en="The Difference">Diferențierea</h2>
+      <h3 class="section-title" data-ro="De ce RO AI Labs este diferit" data-en="Why RO AI Labs is different">De ce RO AI Labs este diferit</h3>
+      <p class="section-intro" data-ro="Nu suntem o firmă de consultanță clasică. Construim sisteme AI reale, care rulează în producție." data-en="We are not a classic consulting firm. We build real AI systems that run in production.">Nu suntem o firmă de consultanță clasică. Construim sisteme AI reale, care rulează în producție.</p>
+      <div class="diff-grid">
+        <div class="diff-item fade-in">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div>
+            <h4 data-ro="Implementări on-premise sau edge" data-en="On-premise or edge deployments">Implementări on-premise sau edge</h4>
+            <p data-ro="Sisteme AI care funcționează direct în mediul tău, fără dependență de cloud extern." data-en="AI systems that work directly in your environment, without external cloud dependency.">Sisteme AI care funcționează direct în mediul tău, fără dependență de cloud extern.</p>
+          </div>
+        </div>
+        <div class="diff-item fade-in">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4 data-ro="AI fără cloud obligatoriu" data-en="AI without mandatory cloud">AI fără cloud obligatoriu</h4>
+            <p data-ro="Construim soluții care rulează local, protejând datele sensibile ale companiei tale." data-en="We build solutions that run locally, protecting your company's sensitive data.">Construim soluții care rulează local, protejând datele sensibile ale companiei tale.</p>
+          </div>
+        </div>
+        <div class="diff-item fade-in">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h4 data-ro="Pregătiți pentru GDPR și AI Act" data-en="GDPR & AI Act ready">Pregătiți pentru GDPR și AI Act</h4>
+            <p data-ro="Arhitecturi conforme cu reglementările europene, din faza de design." data-en="Architectures compliant with European regulations, from the design phase.">Arhitecturi conforme cu reglementările europene, din faza de design.</p>
+          </div>
+        </div>
+        <div class="diff-item fade-in">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div>
+            <h4 data-ro="Experiență în sisteme critice" data-en="Critical systems experience">Experiență în sisteme critice</h4>
+            <p data-ro="Expertiză reală în sisteme industriale și misiuni critice, nu doar PoC-uri de laborator." data-en="Real expertise in industrial and mission-critical systems, not just lab PoCs.">Expertiză reală în sisteme industriale și misiuni critice, nu doar PoC-uri de laborator.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Process -->
-  <section class="section section-dark" id="process">
+  <section class="section" id="process">
     <div class="container fade-in">
       <h2 class="section-label" data-ro="Proces" data-en="Process">Proces</h2>
       <h3 class="section-title" data-ro="Cum funcționează" data-en="How It Works">Cum funcționează</h3>
@@ -209,7 +446,75 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Visual Proof: Architecture Diagram -->
+  <section class="section section-dark" id="proof">
+    <div class="container fade-in">
+      <h2 class="section-label" data-ro="Tehnologie" data-en="Technology">Tehnologie</h2>
+      <h3 class="section-title" data-ro="Arhitectură AI pentru medii de producție" data-en="AI architecture for production environments">Arhitectură AI pentru medii de producție</h3>
+      <div class="arch-diagram fade-in">
+        <svg viewBox="0 0 800 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="arch-svg">
+          <!-- Data Sources -->
+          <rect x="20" y="30" width="160" height="280" rx="12" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.2)" stroke-width="1.5"/>
+          <text x="100" y="22" fill="#3b82f6" font-size="12" font-weight="600" text-anchor="middle" font-family="Inter, sans-serif">DATA SOURCES</text>
+          <rect x="40" y="55" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="100" y="80" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">IoT Sensors</text>
+          <rect x="40" y="110" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="100" y="135" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Cameras</text>
+          <rect x="40" y="165" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="100" y="190" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">ERP / DB</text>
+          <rect x="40" y="220" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="100" y="245" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Documents</text>
+
+          <!-- Arrows from sources to edge -->
+          <line x1="180" y1="75" x2="240" y2="130" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="180" y1="130" x2="240" y2="140" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="180" y1="185" x2="240" y2="175" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="180" y1="240" x2="240" y2="195" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+          <!-- Edge Processing -->
+          <rect x="240" y="60" width="180" height="220" rx="12" fill="rgba(14,165,233,0.06)" stroke="rgba(14,165,233,0.25)" stroke-width="1.5"/>
+          <text x="330" y="52" fill="#0ea5e9" font-size="12" font-weight="600" text-anchor="middle" font-family="Inter, sans-serif">EDGE / ON-PREMISE</text>
+          <rect x="260" y="85" width="140" height="40" rx="8" fill="rgba(14,165,233,0.1)" stroke="rgba(14,165,233,0.25)" stroke-width="1"/>
+          <text x="330" y="110" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Data Pipeline</text>
+          <rect x="260" y="140" width="140" height="40" rx="8" fill="rgba(14,165,233,0.15)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/>
+          <text x="330" y="165" fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle" font-family="Inter, sans-serif">AI Models</text>
+          <rect x="260" y="195" width="140" height="40" rx="8" fill="rgba(14,165,233,0.1)" stroke="rgba(14,165,233,0.25)" stroke-width="1"/>
+          <text x="330" y="220" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Inference Engine</text>
+
+          <!-- Arrows from edge to outputs -->
+          <line x1="420" y1="130" x2="480" y2="100" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="420" y1="170" x2="480" y2="170" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="420" y1="215" x2="480" y2="240" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+          <!-- Outputs / Actions -->
+          <rect x="480" y="30" width="160" height="280" rx="12" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.2)" stroke-width="1.5"/>
+          <text x="560" y="22" fill="#3b82f6" font-size="12" font-weight="600" text-anchor="middle" font-family="Inter, sans-serif">OUTPUTS</text>
+          <rect x="500" y="60" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="560" y="85" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Alerts</text>
+          <rect x="500" y="115" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="560" y="140" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Dashboards</text>
+          <rect x="500" y="170" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="560" y="195" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Automation</text>
+          <rect x="500" y="225" width="120" height="40" rx="8" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+          <text x="560" y="250" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Reports</text>
+
+          <!-- Security / Compliance badge -->
+          <rect x="660" y="100" width="120" height="140" rx="12" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.25)" stroke-width="1.5"/>
+          <text x="720" y="92" fill="rgb(16,185,129)" font-size="11" font-weight="600" text-anchor="middle" font-family="Inter, sans-serif">COMPLIANCE</text>
+          <text x="720" y="145" fill="rgba(203,213,225,0.9)" font-size="10" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">GDPR</text>
+          <text x="720" y="170" fill="rgba(203,213,225,0.9)" font-size="10" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">AI Act</text>
+          <text x="720" y="195" fill="rgba(203,213,225,0.9)" font-size="10" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">On-Premise</text>
+          <text x="720" y="220" fill="rgba(203,213,225,0.9)" font-size="10" font-weight="500" text-anchor="middle" font-family="Inter, sans-serif">Data Privacy</text>
+
+          <!-- Arrow from outputs to compliance -->
+          <line x1="640" y1="170" x2="660" y2="170" stroke="rgba(16,185,129,0.35)" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <p class="arch-caption" data-ro="Arhitectură tipică: de la surse de date la decizii automate — totul on-premise, fără a trimite date sensibile în cloud." data-en="Typical architecture: from data sources to automated decisions — all on-premise, without sending sensitive data to the cloud.">Arhitectură tipică: de la surse de date la decizii automate — totul on-premise, fără a trimite date sensibile în cloud.</p>
+    </div>
+  </section>
+
+  <!-- Contact (with urgency CTA) -->
   <section class="section" id="contact">
     <div class="container fade-in">
       <h2 class="section-label" data-ro="Contact" data-en="Contact">Contact</h2>
@@ -217,7 +522,8 @@
       <div class="contact-grid">
         <div class="contact-cta fade-in">
           <p data-ro="Programează un call de 30 de minute cu echipa noastră — gratuit, fără obligații. Discutăm despre provocările tale și vedem dacă putem ajuta." data-en="Schedule a 30-minute call with our team — free, no obligations. We discuss your challenges and see if we can help.">Programează un call de 30 de minute cu echipa noastră — gratuit, fără obligații. Discutăm despre provocările tale și vedem dacă putem ajuta.</p>
-          <a href="https://calendly.com/roailabs/discovery" target="_blank" rel="noopener" class="btn btn-primary" data-ro="Programează apelul" data-en="Schedule the call">Programează apelul</a>
+          <a href="https://calendly.com/roailabs/discovery" target="_blank" rel="noopener" class="btn btn-primary" data-ro="Programează una dintre cele 3 evaluări disponibile luna aceasta" data-en="Book one of the 3 assessments available this month">Programează una dintre cele 3 evaluări disponibile luna aceasta</a>
+          <p class="cta-urgency" data-ro="Următorul slot liber: martie 2026" data-en="Next available slot: March 2026">Următorul slot liber: martie 2026</p>
         </div>
         <div class="contact-info fade-in">
           <div class="contact-item">
