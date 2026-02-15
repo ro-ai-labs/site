@@ -1,5 +1,5 @@
 /* ===========================
-   RO AI Labs — Main JS
+   AI Leaders Romania — Main JS
    =========================== */
 
 (function () {
@@ -62,6 +62,26 @@
     });
   }
 
+  // ---- FAQ Accordion ----
+  var faqItems = document.querySelectorAll('.faq-item');
+  for (var i = 0; i < faqItems.length; i++) {
+    (function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var wasActive = item.classList.contains('active');
+        // Close all
+        for (var j = 0; j < faqItems.length; j++) {
+          faqItems[j].classList.remove('active');
+        }
+        // Toggle clicked
+        if (!wasActive) {
+          item.classList.add('active');
+        }
+      });
+    })(faqItems[i]);
+  }
+
   // ---- Scroll Fade-In ----
   var fadeEls = document.querySelectorAll('.fade-in');
 
@@ -87,7 +107,7 @@
   var navLinks = document.querySelectorAll('.nav-links a');
 
   function highlightNav() {
-    var scrollY = window.scrollY + 120;
+    var scrollY = window.scrollY + 100;
     for (var i = sections.length - 1; i >= 0; i--) {
       var section = sections[i];
       if (section.offsetTop <= scrollY) {
