@@ -897,62 +897,6 @@ img {
    Process Section
    =========================== */
 
-.steps {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0;
-}
-
-.step {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  padding: 32px;
-  background: rgba(59, 130, 246, 0.04);
-  border: 1px solid rgba(59, 130, 246, 0.08);
-  border-radius: 12px;
-}
-
-.step-number {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--blue), var(--teal));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.2rem;
-  flex-shrink: 0;
-}
-
-.step-content h4 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.step-duration {
-  font-size: 0.85rem;
-  color: var(--blue);
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.step-content > p:last-child {
-  color: var(--gray-400);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.step-connector {
-  width: 2px;
-  height: 32px;
-  background: rgba(59, 130, 246, 0.2);
-  margin-left: 55px;
-}
-
 /* ===========================
    Investment Timeline
    =========================== */
@@ -1007,30 +951,6 @@ img {
   color: var(--blue);
 }
 
-.timeline-deliverables {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.timeline-deliverables li {
-  font-size: 0.92rem;
-  color: var(--gray-300);
-  padding-left: 18px;
-  position: relative;
-  line-height: 1.5;
-}
-
-.timeline-deliverables li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-}
 
 /* ===========================
    Contact Section
@@ -1196,15 +1116,6 @@ img {
     flex-direction: column;
     gap: 12px;
     padding: 24px;
-  }
-
-  .step {
-    gap: 16px;
-    padding: 24px;
-  }
-
-  .step-connector {
-    margin-left: 47px;
   }
 
   .footer-inner {
