@@ -980,6 +980,60 @@ img {
 
 
 /* ===========================
+   Community Section
+   =========================== */
+
+.community-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+
+.community-text p {
+  color: var(--gray-400);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.community-text p:last-child {
+  margin-bottom: 0;
+}
+
+.community-topics h4 {
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.community-topics .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.community-topics .tag-list li {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--gray-300);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.community-cta {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.community-note {
+  color: var(--gray-500);
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+/* ===========================
    Contact Section
    =========================== */
 
@@ -1132,6 +1186,11 @@ img {
     font-size: 2rem;
     margin-bottom: 0;
     min-width: 70px;
+  }
+
+  .community-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .contact-grid {
