@@ -277,6 +277,15 @@ img {
     var(--navy);
 }
 
+.hero-eyebrow {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
 .hero-headline {
   font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 800;
