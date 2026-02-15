@@ -263,6 +263,24 @@ img {
   transform: translateY(0);
 }
 
+.btn-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.btn-link:hover {
+  color: var(--teal);
+}
+
+.btn-link::after {
+  content: ' →';
+}
+
 /* ===========================
    Hero
    =========================== */
