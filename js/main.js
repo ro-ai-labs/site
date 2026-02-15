@@ -29,7 +29,7 @@
       var el = elements[i];
       // Skip lang toggle options themselves
       if (el.classList.contains('lang-option')) continue;
-      el.textContent = el.getAttribute('data-' + lang);
+      el.innerHTML = el.getAttribute('data-' + lang);
     }
   }
 
