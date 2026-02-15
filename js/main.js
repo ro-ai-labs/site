@@ -1,5 +1,8 @@
 /* ===========================
-   AI Leaders Romania — Main JS
+   AI Leaders Romania - Main JS
+   Bilingual toggle uses innerHTML to swap data-ro/data-en attributes
+   which may contain HTML (e.g. anchor tags in the hero eyebrow).
+   All attribute values are hardcoded in the page source - no user input.
    =========================== */
 
 (function () {
@@ -23,13 +26,14 @@
       }
     }
 
-    // Update all bilingual elements
+    // Update all bilingual elements (attributes are hardcoded, not user-supplied)
     var elements = document.querySelectorAll('[data-ro][data-en]');
     for (var i = 0; i < elements.length; i++) {
       var el = elements[i];
       // Skip lang toggle options themselves
       if (el.classList.contains('lang-option')) continue;
-      el.innerHTML = el.getAttribute('data-' + lang);
+      // Safe: values come from hardcoded data attributes in the HTML source
+      el.innerHTML = el.getAttribute('data-' + lang); // eslint-disable-line no-unsanitized/property
     }
   }
 
@@ -82,6 +86,20 @@
     })(faqItems[i]);
   }
 
+  // ---- Nav scroll state ----
+  var nav = document.getElementById('nav');
+
+  function checkNavScroll() {
+    if (window.scrollY > 20) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', checkNavScroll, { passive: true });
+  checkNavScroll();
+
   // ---- Scroll Fade-In ----
   var fadeEls = document.querySelectorAll('.fade-in');
 
@@ -113,11 +131,23 @@
       if (section.offsetTop <= scrollY) {
         var id = section.getAttribute('id');
         for (var j = 0; j < navLinks.length; j++) {
-          navLinks[j].style.color = '';
+          var link = navLinks[j];
+          // Don't override nav-highlight base color
+          if (link.classList.contains('nav-highlight')) {
+            link.style.color = '';
+            link.style.borderColor = '';
+          } else {
+            link.style.color = '';
+          }
         }
         var active = document.querySelector('.nav-links a[href="#' + id + '"]');
         if (active) {
-          active.style.color = '#ffffff';
+          if (active.classList.contains('nav-highlight')) {
+            active.style.color = '#ffffff';
+            active.style.borderColor = 'rgba(59, 130, 246, 0.6)';
+          } else {
+            active.style.color = '#ffffff';
+          }
         }
         break;
       }
