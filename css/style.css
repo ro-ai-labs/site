@@ -1614,14 +1614,112 @@ img {
     gap: 16px;
   }
 
+  .comparison-table-wrap {
+    overflow-x: visible;
+  }
+
   .comparison-table {
-    min-width: 480px;
+    min-width: 0;
+    font-size: 0.85rem;
+    display: block;
+  }
+
+  .comparison-table thead {
+    display: none;
+  }
+
+  .comparison-table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .comparison-table tbody tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: linear-gradient(135deg, rgba(19, 31, 53, 0.6), rgba(16, 29, 51, 0.4));
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .comparison-table tbody td {
+    border-bottom: none;
+    padding: 10px 14px;
     font-size: 0.82rem;
   }
 
-  .comparison-table th,
-  .comparison-table td {
-    padding: 10px 12px;
+  .comparison-table tbody td.comparison-row-label {
+    grid-column: 1 / -1;
+    background: rgba(79, 143, 247, 0.05);
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 0.78rem;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .comparison-table tbody td:nth-child(2),
+  .comparison-table tbody td:nth-child(3) {
+    color: var(--gray-500);
+    border-right: 1px solid var(--border-subtle);
+    font-size: 0.78rem;
+  }
+
+  .comparison-table tbody td:nth-child(3) {
+    border-right: none;
+  }
+
+  .comparison-table tbody td.comparison-highlight {
+    grid-column: 1 / -1;
+    background: rgba(245, 166, 35, 0.06);
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(245, 166, 35, 0.12);
+    font-size: 0.85rem;
+    padding: 12px 14px;
+  }
+
+  .comparison-table tbody td:nth-child(2)::before,
+  .comparison-table tbody td:nth-child(3)::before {
+    display: block;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--gray-500);
+    margin-bottom: 3px;
+    opacity: 0.7;
+  }
+
+  .comparison-table tbody td:nth-child(2)::before {
+    content: "Curs";
+  }
+
+  .comparison-table tbody td:nth-child(3)::before {
+    content: "Comunitate";
+  }
+
+  .comparison-table tbody td.comparison-highlight::before {
+    content: "AI Leaders";
+    display: block;
+    font-family: var(--font-display);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--amber);
+    margin-bottom: 3px;
+  }
+
+  /* EN overrides for mobile comparison card labels */
+  html[lang="en"] .comparison-table tbody td:nth-child(2)::before {
+    content: "Course";
+  }
+
+  html[lang="en"] .comparison-table tbody td:nth-child(3)::before {
+    content: "Community";
   }
 
   .pricing-corporate-content {
