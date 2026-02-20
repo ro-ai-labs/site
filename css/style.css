@@ -908,6 +908,11 @@ img {
   border-top: 1px solid rgba(59, 130, 246, 0.08);
 }
 
+.tally-embed-wrap {
+  max-width: 640px;
+  margin: 32px auto 0;
+}
+
 /* ===========================
    Leaders / Team
    =========================== */
